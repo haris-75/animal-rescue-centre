@@ -2,6 +2,7 @@ import Logo from '../../assets/logo.png';
 import Button from '../../components/Button';
 import HeartIcon from '../../assets/heart-img.svg';
 import PhoneIcon from '../../assets/phone.svg';
+import MobileToggler from '../../assets/mobile-nav-toggle.svg';
 export default function Navbar() {
   return (
     <div className='flex sticky top-0 justify-between py-6 border-b-2 border-dark bg-white-secondary xl:px-[100px] lg:px-[60px] md:px-6 sm:px-10 px-8'>
@@ -21,6 +22,12 @@ export default function Navbar() {
           <li>Ways to give</li>
           <li>Events</li>
         </ul>
+        <div className='md:hidden hidden sm:block w-[40px] m-auto ml-4'>
+          <img
+            src={MobileToggler}
+            alt='mobile-nav-toggler'
+          />
+        </div>
       </div>
       {/* Nav Right */}
       <div className='sm:flex items-center xl:gap-8 lg:gap-5 sm:gap-3 sm:flex-row flex-col-reverse gap-2 hidden'>
@@ -41,6 +48,12 @@ export default function Navbar() {
             textColor='text-white'
           />
         </div>
+      </div>
+      <div className='md:hidden sm:hidden block w-[40px] my-auto'>
+        <img
+          src={MobileToggler}
+          alt='mobile-nav-toggler'
+        />
       </div>
       {/* Mobile Menu */}
       {/* <ul className='mobile-menu hidden md:flex md:gap-12 md:text-sm lg:text-base'>
