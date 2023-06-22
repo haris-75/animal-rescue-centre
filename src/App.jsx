@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='max-w-[1440px] m-auto font-poppins xl:px-[100px] lg:px-[60px]'>
+      <div className='max-w-[1440px] m-auto font-poppins xl:px-[100px] lg:px-[60px] md:px-6'>
         <HomePage />
       </div>
     </>

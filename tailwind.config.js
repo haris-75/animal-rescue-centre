@@ -5,7 +5,6 @@ export default {
     fontFamily: {
       poppins: ['Poppins'],
     },
-
     extend: {
       colors: {
         dark: '#1E1F27',
@@ -14,6 +13,14 @@ export default {
         white: '#FFFFFF',
         'white-secondary': '#f5f5f5',
       },
+    },
+    screens: {
+      xs: '350px',
+      sm: '640px',
+      md: '768px',
+      'md-lg': '850px',
+      lg: '1024px',
+      xl: '1280px',
     },
   },
   plugins: [],

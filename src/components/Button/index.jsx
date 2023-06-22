@@ -9,13 +9,15 @@ export default function Button({
   return (
     <button
       className={`flex gap-2 items-center ${backgroundColor} ${textColor} ${borderWidth} ${borderColor} rounded-full font-poppins font-semibold 
-         text-lg py-2.5 px-5`}
+      lg:text-lg md:text-base lg:py-2.5 lg:px-5 md:py-1.5 md:px-3`}
     >
-      <img
-        width={25}
-        src={icon}
-        alt={`${text}-btn`}
-      />
+      <div className='md:w-[20px] lg:w-[25px]'>
+        <img
+          src={icon}
+          alt={`${text}-btn`}
+        />
+      </div>
+
       {text}
     </button>
   );
