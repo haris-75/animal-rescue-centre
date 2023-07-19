@@ -13,6 +13,8 @@ export default {
         secondary: '#F8DB46',
         white: '#FFFFFF',
         'white-secondary': '#f5f5f5',
+        success: '#04C27F',
+        warning: '#5758F1',
       },
     },
     screens: {
