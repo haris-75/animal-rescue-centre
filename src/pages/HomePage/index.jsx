@@ -23,7 +23,7 @@ export default function HomePage() {
             <h4 className='lg:text-3xl md-lg:text-2xl md:text-xl font-poppins font-bold text-dark mb-6'>
               Your Gift Helps Save Lives
             </h4>
-            <div className='flex md:gap-8 gap-4 '>
+            <div className='flex md:gap-8 gap-2'>
               <Button
                 icon={HeartIcon}
                 text='Donate'
