@@ -26,8 +26,8 @@ export default function Footer() {
   ];
   return (
     <Container>
-      <div className='pt-[50px] pb-[120px] flex flex-col xl:gap-[40px] lg:gap-[18px] justify-center items-center'>
-        <div className='grid md-lg:grid-cols-4 sm:grid-cols-2 md:gap-8 gap-4 pb-6 border-b-2 border-dark justify-start'>
+      <div className='pt-[50px] pb-[120px] md:pb-[50px] flex flex-col justify-center items-center'>
+        <div className='w-full grid md-lg:grid-cols-4 xs:grid-cols-2 md:gap-8 gap-6 pb-6 lg:pb-10 xl:pb-14 border-b-2 border-dark justify-start sm:justify-normal'>
           {/* Footer Part-1 */}
           <div className='flex flex-col md:gap-5 gap-3'>
             <img
@@ -131,7 +131,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='pt-6'>
+        <div className='w-full pt-6 lg:pt-10 xl:pt-14'>
           <h1 className='lg:text-4xl md:text-3xl text-2xl text-center font-bold'>
             We are not just a rescue,
             <span className='text-primary'>we are a refuge</span>

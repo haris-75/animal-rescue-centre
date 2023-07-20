@@ -1,4 +1,4 @@
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/rescue-center-logo.png';
 import Button from '../../components/Button';
 import HeartIcon from '../../assets/heart-img.svg';
 import PhoneIcon from '../../assets/phone.svg';
