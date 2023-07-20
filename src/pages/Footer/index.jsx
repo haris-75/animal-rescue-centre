@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <Container>
       <div className='pt-[50px] pb-[120px] flex flex-col xl:gap-[40px] lg:gap-[18px] justify-center items-center'>
-        <div className='grid lg:grid-cols-4 sm:grid-cols-2 md:gap-8 gap-6 pb-6 border-b-2 border-dark justify-start'>
+        <div className='grid md-lg:grid-cols-4 sm:grid-cols-2 md:gap-8 gap-4 pb-6 border-b-2 border-dark justify-start'>
           {/* Footer Part-1 */}
           <div className='flex flex-col md:gap-5 gap-3'>
             <img
@@ -57,7 +57,7 @@ export default function Footer() {
           <div className='flex flex-col md:gap-4 gap-2'>
             {footerItems1?.map((item) => (
               <p
-                className='lg:text-xl md:text-lg text-base md:font-bold font-medium'
+                className='lg:text-xl md:text-lg text-base md:font-medium font-normal'
                 key={item}
               >
                 {item}
@@ -68,7 +68,7 @@ export default function Footer() {
           <div className='flex flex-col md:gap-4 gap-2'>
             {footerItems2?.map((item) => (
               <p
-                className='lg:text-xl md:text-lg text-base md:font-bold font-medium'
+                className='lg:text-xl md:text-lg text-base md:font-medium font-normal'
                 key={item}
               >
                 {item}
@@ -76,58 +76,58 @@ export default function Footer() {
             ))}
           </div>
           {/* Footer Part-4 */}
-          <div className='grid grid-cols-8 grid-rows-5 md:gap-5 gap-2.5'>
-            <img
-              className='col-span-1 row-span-2'
-              src={AddressIcon}
-              alt='location-icon'
-            />
-            <div className='col-span-7 row-span-2'>
-              <p className='lg:text-xl md:text-lg text-base md:font-bold font-medium'>
-                PO Box 83644
-              </p>
-              <p className='lg:text-xl md:text-lg text-base md:font-bold font-medium'>
-                Middleton, 2452 Wilson
-              </p>
-            </div>
-            <img
-              className='col-span-1'
-              src={PhoneIcon}
-              alt='phone-icon'
-            />
-            <div className='col-span-7'>
-              <p className='lg:text-xl md:text-lg text-base md:font-bold font-medium'>
-                631-249-7325
-              </p>
-            </div>
-            <img
-              className='col-span-1'
-              src={MailIcon}
-              alt='mail-icon'
-            />
-            <div className='col-span-7'>
-              <p className='lg:text-xl md:text-lg text-base md:font-bold font-medium'>
-                pet_home@gmail.com
-              </p>
-            </div>
-            <img
-              className='col-span-1'
-              src={TwitterIcon}
-              alt='twitter-icon'
-            />
-            <div className='col-span-7 flex md:gap-5 gap-2.5'>
-              <div>
-                <img
-                  src={WhatsAppIcon}
-                  alt='whatsapp-icon'
-                />
+          <div className='flex flex-col lg:gap-6 gap-3'>
+            <div className='grid grid-cols-6 grid-rows-1 '>
+              <img
+                className='lg:col-span-1 col-span-1 mt-[3px] -mb-[5px]'
+                src={AddressIcon}
+                alt='location-icon'
+              />
+              <div className='lg:col-span-5 col-span-5'>
+                <p className='lg:text-xl md:text-lg text-base md:font-medium font-normal'>
+                  PO Box 83644
+                </p>
+                <p className='lg:text-xl md:text-lg text-base md:font-medium font-normal'>
+                  Middleton, 2452 Wilson
+                </p>
               </div>
-              <div>
-                <img
-                  src={InstaIcon}
-                  alt='insta-icon'
-                />
+            </div>
+            <div className='grid grid-cols-6 grid-rows-2 lg:gap-y-6 gap-y-3 items-center'>
+              <img
+                className='lg:col-span-1 col-span-1'
+                src={PhoneIcon}
+                alt='phone-icon'
+              />
+              <div className='lg:col-span-5 col-span-5'>
+                <p className='lg:text-xl md:text-lg text-base md:font-medium font-normal'>
+                  631-249-7325
+                </p>
               </div>
+              <img
+                className='lg:col-span-1 col-span-1'
+                src={MailIcon}
+                alt='mail-icon'
+              />
+              <div className='lg:col-span-5 col-span-5'>
+                <p className='lg:text-xl md:text-lg text-base md:font-medium font-normal'>
+                  rsc@gmail.com
+                </p>
+              </div>
+            </div>
+            <div className=' flex md:gap-4 xl:gap-6 gap-2.5'>
+              <img
+                className='lg:col-span-1 col-span-1'
+                src={TwitterIcon}
+                alt='twitter-icon'
+              />
+              <img
+                src={WhatsAppIcon}
+                alt='whatsapp-icon'
+              />
+              <img
+                src={InstaIcon}
+                alt='insta-icon'
+              />
             </div>
           </div>
         </div>
