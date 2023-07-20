@@ -9,7 +9,7 @@ export default function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
   return (
     <>
-      <div className='flex sticky top-0 justify-between py-6 border-b-2 border-dark backdrop-blur-lg xl:px-[100px] lg:px-[60px] md:px-6 sm:px-10 px-8'>
+      <div className='flex sticky top-0 justify-between py-6 border-b-2 border-dark bg-white xl:px-[100px] lg:px-[60px] md:px-6 sm:px-10 px-8'>
         {/* Nav Left */}
         <div className='flex lg:gap-4 md:gap-2'>
           <div className='p-1.5'>
@@ -82,7 +82,7 @@ export default function Navbar() {
         </ul>
       </div>
       {/* Mobile Nav Bottom */}
-      <div className='w-full justify-evenly p-6 flex fixed items-center gap-3 md:hidden bottom-0 backdrop-blur-lg'>
+      <div className='w-full justify-evenly p-6 flex fixed items-center gap-3 md:hidden bottom-0 bg-white'>
         <div className='items-center flex gap-3'>
           <div className='md:w-[12px]'>
             <img
