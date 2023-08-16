@@ -6,6 +6,7 @@ import Footer from './pages/Footer';
 import HelpPage from './pages/HelpPage';
 import HomePage from './pages/HomePage';
 import StatsPage from './pages/StatsPage';
+import SubscribeForm from './pages/SubscribeForm';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AdoptInfo />
       <HelpPage />
       <BrowsePage />
+      <SubscribeForm />
       <Footer />
     </>
   );
