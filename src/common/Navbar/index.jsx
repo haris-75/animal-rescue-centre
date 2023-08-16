@@ -9,7 +9,7 @@ export default function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
   return (
     <>
-      <div className='flex sticky top-0 justify-between py-6 border-b-2 border-dark bg-white xl:px-[100px] lg:px-[60px] md:px-6 sm:px-10 px-8'>
+      <div className='z-50 flex sticky top-0 justify-between py-6 border-b-2 border-dark bg-white xl:px-[100px] lg:px-[60px] md:px-6 sm:px-10 px-8'>
         {/* Nav Left */}
         <div className='flex lg:gap-4 md:gap-2'>
           <div className='p-1.5'>

@@ -7,3 +7,61 @@
 body {
   background: #f5f5f5;
 }
+
+button:hover div > img {
+  animation: rotateImg 500ms ease;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  6.25% {
+    transform: rotate(5deg);
+  }
+  12.5% {
+    transform: rotate(10deg);
+  }
+  18.75% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  31.25% {
+    transform: rotate(15deg);
+  }
+  37.5% {
+    transform: rotate(10deg);
+  }
+  43.75% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  56.25% {
+    transform: rotate(-5deg);
+  }
+  62.5% {
+    transform: rotate(-10deg);
+  }
+  68.75% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  81.25% {
+    transform: rotate(-15deg);
+  }
+  87.5% {
+    transform: rotate(-10deg);
+  }
+  93.75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
