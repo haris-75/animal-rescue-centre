@@ -19,7 +19,6 @@ export default function Button({
       {icon ? (
         <div className='sm:w-[20px] lg:w-[25px] w-[18px]'>
           <img
-            // className='transition ease-in-out duration-700'
             src={icon}
             alt={`${text}-btn`}
           />
