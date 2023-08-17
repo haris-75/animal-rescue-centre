@@ -1,4 +1,4 @@
-import HomePageImage from '../../assets/home-page-img.svg';
+import HomePageImage from '../../assets/home-page-img.png';
 import Button from '../../components/Button';
 import DogIcon from '../../assets/dog-icon.svg';
 import HeartIcon from '../../assets/heart-img.svg';
@@ -41,7 +41,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className='my-auto ml-auto lg:w-[440px] md:w-[380px] sm:w-[250px]'>
+        <div className='my-auto ml-auto sm:mr-0 mr-auto lg:w-[440px] md:w-[380px] sm:w-[250px] xs:w-[300px]'>
           <img
             src={HomePageImage}
             alt='home-page-img'
