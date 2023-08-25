@@ -2,14 +2,12 @@ import Logo from '../../assets/rescue-center-logo.png';
 import Button from '../../components/Button';
 import HeartIcon from '../../assets/heart-img.svg';
 import PhoneIcon from '../../assets/phone.svg';
-import MobileToggler from '../../assets/mobile-nav-toggle.svg';
-import Cross from '../../assets/cross.svg';
 import { useState } from 'react';
 export default function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
   return (
-    <>
-      <div className='z-50 flex sticky top-0 justify-between py-6 border-b-2 border-dark bg-white xl:px-[100px] lg:px-[60px] md:px-6 sm:px-10 px-8'>
+    <div className='relative'>
+      <div className='z-[50] flex sticky top-0 justify-between py-6 border-b-2 border-dark bg-white xl:px-[100px] lg:px-[60px] md:px-6 sm:px-10 px-8'>
         {/* Nav Left */}
         <div className='flex lg:gap-4 md:gap-2'>
           <div className='p-1.5'>
@@ -49,38 +47,30 @@ export default function Navbar() {
         </div>
         {/* Mobile Nav Icon */}
         <div
-          className='md:hidden block w-[40px] my-auto'
+          className='md:hidden block my-auto'
           onClick={() => setShowMobileNav(!showMobileNav)}
         >
-          <img
-            className={`${showMobileNav ? 'hidden' : ''}`}
-            src={MobileToggler}
-            alt='mobile-nav-toggler'
-          />
-          <img
-            className={`m-auto ${showMobileNav ? '' : 'hidden'}`}
-            src={Cross}
-            width={30}
-            alt='mobile-nav-toggler'
-          />
+          <div
+            className={`hamburger ${showMobileNav ? 'show-mobile-nav' : ''}`}
+          ></div>
         </div>
-        {/* Mobile Menu */}
-        <ul
-          className={`w-full pb-9 px-9 absolute ${
-            showMobileNav ? 'block' : 'hidden'
-          } md:hidden bg-white-secondary top-[102px] left-0`}
-        >
-          {['Home', 'About', 'Contact', 'FAQs', 'Testimonials']?.map((ele) => (
-            <li key={ele}>
-              <div>
-                <div className='inline-block cursor-pointer pt-9 font-secondary-font text-md capitalize transition-all '>
-                  {ele}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
       </div>
+      {/* Mobile Menu */}
+      <ul
+        className={`w-full pb-9 px-9 absolute transition-all duration-1000 z-[20] ${
+          showMobileNav ? 'top-[102px]' : '-top-[400%]'
+        } md:hidden bg-white-secondary left-0`}
+      >
+        {['Home', 'About', 'Contact', 'FAQs', 'Testimonials']?.map((ele) => (
+          <li key={ele}>
+            <div>
+              <div className='inline-block cursor-pointer pt-9 font-secondary-font text-md capitalize transition-all '>
+                {ele}
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
       {/* Mobile Nav Bottom */}
       <div className='w-full justify-evenly p-6 flex fixed items-center gap-3 md:hidden bottom-0 bg-white'>
         <div className='items-center flex gap-3'>
@@ -101,6 +91,6 @@ export default function Navbar() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }

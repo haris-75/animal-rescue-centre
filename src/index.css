@@ -8,6 +8,8 @@ body {
   background: #f5f5f5;
 }
 
+/* Button Animation */
+
 button:hover div > img {
   animation: rotateImg 500ms ease;
 }
@@ -64,4 +66,42 @@ button:hover div > img {
   100% {
     transform: rotate(0deg);
   }
+}
+
+/* Mobile Navbar Icon */
+
+.hamburger {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  border-radius: 5px;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.hamburger::before {
+  transform: translateY(-8px);
+}
+.hamburger::after {
+  transform: translateY(8px);
+}
+
+.show-mobile-nav.hamburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.show-mobile-nav.hamburger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+.show-mobile-nav.hamburger {
+  transform: translateX(-50px);
+  background: transparent;
 }
